@@ -126,7 +126,7 @@
 #elif defined(__APPLE__) && defined(__MACH__)
     #define MEDIAINFODLL_NAME "libmediainfo.0.dylib"
     #define __stdcall
-    #include <new> //for size_t
+    #include <stddef.h> //for size_t
 #else
     #define MEDIAINFODLL_NAME "libmediainfo.so.0"
     #define __stdcall
